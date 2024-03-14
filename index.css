@@ -412,6 +412,96 @@ label{
 }
 
 
+
+/* SIDEBAR */
+.sidebar{
+    height: 96vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.container-up{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.home:hover{
+    background: white !important;
+    color: white !important;
+}
+.home:hover i{
+    color: var(--primary-color) !important;
+}
+
+/* DASHBOARD CONTENT */
+.dashboard-content{
+    height: 100vh;
+    background: #f8f8f8;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: transparent;
+}
+.search{
+    /* border: 1px solid #000; */
+    width: 50%;
+}
+.dashboard-image{
+    height: 200px;
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) ,url(https://img.freepik.com/premium-vector/delivery-man-medical-mask-riding-scooter-food-delivery-man-vector-illustration_593228-197.jpg?w=740);
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+.dash-btn{
+    background: var(--primary-color) !important;
+    color: #f8f8f8 !important;
+
+}
+.image-pizza{
+    height: 70px;
+    width: 70px;
+    background: #fff;
+}
+.image-pizza img{
+    width: 100%;
+    height: 100%;
+}
+.product-icon{
+    background: var(--primary-color);
+}
+.dash-product{
+    background: #fff;
+}
+.dash-product:hover{
+    background: var(--primary-color);
+}
+.dash-product:hover .product-icon{
+    background: #fff;
+    color: var(--primary-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVENESS */
 
 
@@ -473,6 +563,36 @@ label{
 
     .has-scrollbar > div
      { min-width: calc(50% - 5px); }
+
+     /* SIDEBAR */
+     /* .sidebar-container{
+        position: fixed !important;
+        z-index: 1;
+        width: 100%;
+    } */
+    body{
+        position: relative;
+    }
+    .container-up{
+        display: flex !important;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .sidebar{
+        
+            position: fixed;
+            display: flex !important;
+            flex-direction: row;
+            justify-content: space-around;
+            bottom: 0px;
+            z-index: 1;
+            height: 60px;
+        
+            /* background: #eee; */
+            width: 95%;
+       
+    }
+  
 }
 
 
