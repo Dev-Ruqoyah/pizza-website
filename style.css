@@ -487,6 +487,55 @@ a{
     background: #fff;
     color: var(--primary-color) !important;
 }
+.dash-product:hover .product-name h5{
+    color: #fff !important;
+}
+.col-lg-8{
+    height: 89vh !important;
+    overflow: scroll;
+}
+.col-lg-8::-webkit-scrollbar{
+    display: none;
+}
+.dashproduct-image{
+    height: 150px;
+    width: 150px;
+    margin-bottom: -80px;
+}
+.dashproduct-image img{
+    height: 100%;
+    width: 100%;
+}
+.dash-two{
+    background: var(--primary-color);
+}
+.dashproduct-details{
+    background: #fff;
+}
+.bg-main{
+    background: var(--primary-color);
+}
+.dashprofile-image{
+    height: 40px;
+    width: 40px;
+}
+.dashprofile-image img{
+    height: 100%;
+    width: 100%;
+}
+.line{
+    width: 20px;
+    height: 2px;
+    /* background: #000; */
+    /* display: none !important; */
+  
+}
+
+
+/* .ovx2{
+    overflow: scroll !important;
+    /* display: none; 
+} */
 
 
 
@@ -506,13 +555,22 @@ a{
 
 
 
-@media (max-width:1020px) {
+@media (max-width:1024px) {
     .remember{
         flex-direction: column !important;
     }
     .ovx{
-        overflow-x: scroll;
+        overflow-x: auto !important;
     }
+    .ovx::-webkit-scrollbar{
+        display: none !important;
+      }
+      .line{
+        display: block;
+      }
+      .bg-main{
+        display: none;
+      }
 }
 @media (max-width:767px) {
     .container-section{
