@@ -85,6 +85,6 @@ if (isset($_POST["submit2"])) {
     $_SESSION["password"] = $user["password"];
 
     echo '<h2 style= "color: green">Succesfully login</h2>';
-    header("location: index.php");
+    header("location: dashboard.php");
 }
 }

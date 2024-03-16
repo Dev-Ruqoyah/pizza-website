@@ -490,11 +490,20 @@ a{
 .dash-product:hover .product-name h5{
     color: #fff !important;
 }
-.col-lg-8{
+.bgside{
+    width: 5% !important;
+}
+.bg-main{
+    width: 20% !important;
+    height: 91vh !important;
+    background: var(--primary-color);
+}
+.bgcenter{
     height: 89vh !important;
     overflow: scroll;
+    width: 67% !important;
 }
-.col-lg-8::-webkit-scrollbar{
+.bgcenter::-webkit-scrollbar{
     display: none;
 }
 .dashproduct-image{
@@ -512,9 +521,7 @@ a{
 .dashproduct-details{
     background: #fff;
 }
-.bg-main{
-    background: var(--primary-color);
-}
+
 .dashprofile-image{
     height: 40px;
     width: 40px;
@@ -527,18 +534,27 @@ a{
     width: 20px;
     height: 2px;
     /* background: #000; */
-    /* display: none !important; */
+    display: none !important;
   
 }
 
-
-/* .ovx2{
-    overflow: scroll !important;
-    /* display: none; 
-} */
-
-
-
+.debit-card{
+    width: 90%;
+    height: 30%;
+    
+}
+.order-body{
+    width: 100%;
+    height: 170px;
+    overflow-y: scroll;
+    
+}
+.order-body::-webkit-scrollbar{
+    display: none;
+}
+.order-image{
+    background: #c26202af;
+}
 
 
 
@@ -565,12 +581,9 @@ a{
     .ovx::-webkit-scrollbar{
         display: none !important;
       }
-      .line{
-        display: block;
-      }
-      .bg-main{
-        display: none;
-      }
+      
+     
+     
 }
 @media (max-width:767px) {
     .container-section{
