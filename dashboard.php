@@ -35,10 +35,45 @@ $details = mysqli_fetch_assoc($select);
     <div class="dashboard-content ">
         <div class="d-flex  container-lg-fluid container-md-fluid mx-auto">
             <div class="  bgside  rounded-2 ms-1">
+            <div class="sidebar-container">
+   <div style="background-color: var(--primary-color); color: white;" class="  text-white py-3 sidebar mt-lg-3 mt-md-2 mt-0 rounded-3">
+      <div class="container-up ">
+         <div class="lines d-flex flex-column gap-1 m-auto">
+            <div class="line bg-light"></div>
+            <div class="line bg-light"></div>
+            <div class="line bg-light"></div>
+         </div>
 
-                <?php
-                include "sidebar.php";
-                ?>
+         <div class="home p-3 rounded-circle ">
+            <a class="text-decoration-none " href="#"> <i class="fa-solid fa-home"></i></a>
+         </div>
+         <div class="home p-3 rounded-circle ">
+            <a class="text-decoration-none " href="#"> <i class="fa-solid fa-message"></i></a>
+         </div>
+         <div class="home p-3 rounded-circle ">
+            <a class="text-decoration-none " href="#"> <i class="fa-solid fa-image"></i></a>
+         </div>
+
+         <div class="home p-3 rounded-circle ">
+            <a class="text-decoration-none " href="#"> <i class="fa-solid fa-chart-simple"></i></a>
+         </div>
+         <div class="home p-3 rounded-circle ">
+            <a class="text-decoration-none " href="#"> <i class="fa-solid fa-gear"></i></a>
+         </div>
+
+
+
+      </div>
+      <div class="container-down">
+         <div class="home p-3 rounded-circle ">
+            <a class="text-decoration-none " href="#"> <i class="fa-solid fa-right-from-bracket"></i></a>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
 
             </div>
             <div class="  bgcenter  mt-3 bg-light mx-auto ">
@@ -58,9 +93,9 @@ $details = mysqli_fetch_assoc($select);
                         </div>
                     </div>
                 </div>
-                <div class="dashboard-category mt-5">
+                <div class="dashboard-category mt-5 ">
                     <div class="row  flex-nowrap gap-2 mx-auto  mt-3 ovx">
-                        <div class="col-lg-2 col-md-3 col-4 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
+                        <div class="col-lg-2 col-md-5 col-6 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
                             <div class="image-pizza rounded-circle">
                                 <img src="./images/dashboard.png" alt="" class="rounded-circle">
                             </div>
@@ -71,7 +106,7 @@ $details = mysqli_fetch_assoc($select);
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-4 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
+                        <div class="col-lg-2 col-md-5 col-6 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
                             <div class="image-pizza rounded-circle">
                                 <img src="./images/burgeree.png" alt="" class="rounded-circle">
                             </div>
@@ -82,7 +117,7 @@ $details = mysqli_fetch_assoc($select);
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-4 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
+                        <div class="col-lg-2 col-md-5 col-6 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
                             <div class="image-pizza rounded-circle">
                                 <img src="./images/burgeree.png" alt="" class="rounded-circle">
                             </div>
@@ -93,7 +128,7 @@ $details = mysqli_fetch_assoc($select);
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-4 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
+                        <div class="col-lg-2 col-md-5 col-6 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
                             <div class="image-pizza rounded-circle">
                                 <img src="./images/burgeree.png" alt="" class="rounded-circle">
                             </div>
@@ -104,7 +139,7 @@ $details = mysqli_fetch_assoc($select);
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-4 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
+                        <div class="col-lg-2 col-md-5 col-6 mx-auto d-flex align-items-center dash-product flex-column py-3 rounded-3">
                             <div class="image-pizza rounded-circle">
                                 <img src="./images/burgeree.png" alt="" class="rounded-circle">
                             </div>
@@ -118,88 +153,79 @@ $details = mysqli_fetch_assoc($select);
 
                     </div>
                 </div>
-                <div class="dash-product-container">
-                    <div class="row flex-nowrap mt-3 ovx">
-                        <div class="col-lg-4 col-md-6  col-12 ">
-                            <div class="dashproduct-image mx-auto">
-                                <img class="pimage" src="./images/dashboard.png" alt="">
+                <div class="dash-product-container mt-3">
+                    <div id="products" class="row flex-nowrap container ovx">
+                        <div class="product-dashee col-lg-4 ">
+                            <div style="height:150px; width:150px; margin-bottom:-70px; " class="dash-image mx-auto">
+                            <img src="./images/dashboard.png" alt="Product 1" height="100%" width="100%">
                             </div>
-                            <div class="dashproduct-details p-2 px-4 rounded-3 pt-5 pb-3 d-flex align-items-center justify-content-between">
-                                <div class="dash-one pt-3">
-                                    <h  5 class="pname">Mushroom Pizza</h>
-                                    <div class="star d-flex">
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                    </div>
-                                    <div class="dash-price">
-                                        <p class="pprice">$342</p>
-                                    </div>
-                                </div>
-                                <div class="dash-two p-3 rounded-circle pt-3">
-                                    <i class="fa fa-plus text-light"></i>
-                                </div>
+                         <div style="background: #fff;" class="  py-3 px-3 rounded-4 d-flex align-items-center justify-content-between">
+                         <div class="pt-5">
+                            <p class="fs-5 m-0">Mushroom Pizza</p>
+                            <div class="stars d-flex">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
                             </div>
+                            <p>$10</p>
+                         </div>
+                            <button style="background: var(--primary-color);" class="add-to-cart p-3 rounded-circle border-0" data-name="Mushroom Pizza" data-price="10" data-image="./images/dashboard.png">
+                                <i class="fa fa-plus text-light"></i>
+                            </button>
+                         </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 ">
-                            <div class="dashproduct-image mx-auto">
-                                <img src="./images/dashboard.png" alt="">
+                        <div class="product-dashee col-lg-4 ">
+                            <div style="height:150px; width:150px; margin-bottom:-70px; " class="dash-image mx-auto">
+                            <img src="./images/dashboard.png" alt="Product 1" height="100%" width="100%">
                             </div>
-                            <div class="dashproduct-details p-2 rounded-3 pt-5 pb-3 d-flex align-items-center justify-content-between px-4">
-                                <div class="dash-one pt-3">
-                                    <h5 class="pname">Sausage Pizza</h5>
-                                    <div class="star d-flex">
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                    </div>
-                                    <div class="dash-price">
-                                        <p>$342</p>
-                                    </div>
-                                </div>
-                                <div class="dash-two p-3 rounded-circle pt-3">
-                                    <i class="fa fa-plus text-light"></i>
-                                </div>
+                         <div style="background: #fff;" class="  py-3 px-3 rounded-4 d-flex align-items-center justify-content-between">
+                         <div class="pt-5">
+                            <p class="fs-5 m-0">Italian Pizza</p>
+                            <div class="stars d-flex">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
                             </div>
+                            <p>$13</p>
+                         </div>
+                            <button style="background: var(--primary-color);" class="add-to-cart p-3 rounded-circle border-0" data-name="Italian Pizza" data-price="13" data-image="./images/dashboard.png">
+                                <i class="fa fa-plus text-light"></i>
+                            </button>
+                         </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 ">
-                            <div class="dashproduct-image mx-auto">
-                                <img src="./images/dashboard.png" alt="">
+                        <div class="product-dashee col-lg-4 ">
+                            <div style="height:150px; width:150px; margin-bottom:-70px; " class="dash-image mx-auto">
+                            <img src="./images/dashboard.png" alt="Product 1" height="100%" width="100%">
                             </div>
-                            <div class="dashproduct-details p-2 rounded-3 pt-5 pb-3 d-flex align-items-center justify-content-between px-4">
-                                <div class="dash-one pt-3">
-                                    <h5 class="pname">Italian Pizza</h5>
-                                    <div class="star d-flex">
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                        <i class="fa fa-star text-warning   "></i>
-                                    </div>
-                                    <div class="dash-price">
-                                        <p>$342</p>
-                                    </div>
-                                </div>
-                                <div class="dash-two p-3 rounded-circle pt-3">
-                                    <i class="fa fa-plus text-light"></i>
-                                </div>
+                         <div style="background: #fff;" class="  py-3 px-3 rounded-4 d-flex align-items-center justify-content-between">
+                         <div class="pt-5">
+                            <p class="fs-5 m-0">Sausage Pizza</p>
+                            <div class="stars d-flex">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
                             </div>
+                            <p>$12</p>
+                         </div>
+                            <button style="background: var(--primary-color);" class="add-to-cart p-3 rounded-circle border-0" data-name="Sausage Pizza" data-price="12" data-image="./images/dashboard.png">
+                                <i class="fa fa-plus text-light"></i>
+                            </button>
+                         </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class=" bg-main mx-auto mt-4 rounded-3">
+            <div class=" bg-main  mx-auto mt-4 rounded-3">
                 <div class="toggle">
-                    <div class="lines d-flex flex-column gap-1 m-auto">
-                        <div class="line bg-light"></div>
-                        <div class="line bg-light"></div>
-                        <div class="line bg-light"></div>
-                    </div>
+                    
                 </div>
 
                 <div class="lg-screen">
@@ -240,55 +266,12 @@ $details = mysqli_fetch_assoc($select);
                     <div class="order-header">
                         <h5 class="text-light">Order Menu</h5>
                     </div>
-                    <div class="order-body gap-3 d-flex flex-column">
-                        <div class="order-product d-flex justify-content-evenly align-items-center shadow p-1 rounded-2">
-                            <div style="height:50px; width:50px" class="order-image  rounded-3 d-flex align-items-center justify-content-center">
-                                <img src="./images/dashboard.png" width="80%" height="80%" class="rounded-circle" alt="">
-                            </div>
-                            <div class="order-quantity">
-                                <div class="product-name text-light">
-                                    <h6 class="m-0 addname">Mushroom Pizza</h6>
-                                </div>
-                                <div class="product-quantity m-0 text-light">
-                                    <p><span>*</span> 1</p>
-                                </div>
-                            </div>
-                            <div class="order-price text-light">
-                                <p>$7.89</p>
-                            </div>
+                    <div id="cart">
+                        
+                        <div id="cart-items" class="d-flex flex-column gap-3">
+
                         </div>
-                        <div class="order-product d-flex justify-content-evenly align-items-center shadow p-1 rounded-2">
-                            <div style="height:50px; width:50px" class="order-image  rounded-3 d-flex align-items-center justify-content-center">
-                                <img src="./images/dashboard.png" width="80%" height="80%" class="rounded-circle" alt="">
-                            </div>
-                            <div class="order-quantity">
-                                <div class="product-name text-light">
-                                    <h6 class="m-0 addname">Mushroom Pizza</h6>
-                                </div>
-                                <div class="product-quantity m-0 text-light">
-                                    <p><span>*</span> 1</p>
-                                </div>
-                            </div>
-                            <div class="order-price text-light">
-                                <p>$7.89</p>
-                            </div>
-                        </div>
-                        <div class="order-product d-flex justify-content-evenly align-items-center shadow p-1 rounded-2">
-                            <div style="height:50px; width:50px" class="order-image  rounded-3 d-flex align-items-center justify-content-center">
-                                <img src="./images/dashboard.png" width="80%" height="80%" class="rounded-circle" alt="">
-                            </div>
-                            <div class="order-quantity">
-                                <div class="product-name text-light">
-                                    <h6 class="m-0 addname">Mushroom Pizza</h6>
-                                </div>
-                                <div class="product-quantity m-0 text-light">
-                                    <p><span>*</span> 1</p>
-                                </div>
-                            </div>
-                            <div class="order-price text-light">
-                                <p>$7.89</p>
-                            </div>
-                        </div>
+                        <p class="text-light fs-5 mt-3">Total: $<span id="cart-total">0</span></p>
                     </div>
                     <div class="order-btn  mt-3 mx-5">
                         <button class="btn  btn-light px-4 rounded-pill">Checkout</button>
@@ -302,6 +285,7 @@ $details = mysqli_fetch_assoc($select);
 
     <!-- MAIN JS -->
     <script src="dashboard.js"></script>
+    <script src="sidebar.js"></script>
 
 </body>
 
