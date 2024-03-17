@@ -58,7 +58,7 @@ function updateCart() {
         imgElement.alt = item.name;
         
         listItem.appendChild(imgElement);
-        listItem.innerHTML += `${item.name} x ${item.quantity}<br>$${item.price * item.quantity}`;
+        listItem.innerHTML += `${item.name} *  ${item.quantity}  -- $${item.price * item.quantity}`;
 
         cartItemsList.appendChild(listItem);
         total += item.price * item.quantity;
@@ -76,14 +76,25 @@ const lines = document.querySelector('.lines').addEventListener('click',()=>{
     clickCount ++;
 
 
-    if(clickCount == 1){
+    if(clickCount %2 == 1){
         bgMain.style.left = '0px'
         bgMain.style.transition = ".9s"
-    }else if(clickCount === 2){
+    }else{
         bgMain.style.left = '-630px'
         bgMain.style.transition = ".9s"
     }
   
-  
-   console.log("Clicked");
+
+})
+
+
+const faright = document.querySelector('.faright')
+faright.addEventListener('click', ()=>{
+    Swal.fire({
+        icon: "warning",
+        // title: "Oops...",
+        text: "Don't log out yet",
+        footer: '<a href="logout.php">Log me out anyway</a>'
+      });
+      console.log("clicked");
 })

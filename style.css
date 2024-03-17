@@ -426,9 +426,9 @@ label{
     display: flex;
     flex-direction: column;
 }
-a{
+a i{
     text-decoration: none !important;
-    color: white !important;
+    color: White;
 }
 .home:hover{
     background: white !important;
@@ -714,8 +714,11 @@ a{
     }
     
     #cart-items{
-        height: 170px !important;
+        height: 200px !important;
     } 
+    .lines:hover{
+        cursor: pointer;
+    }
   
 }
 
